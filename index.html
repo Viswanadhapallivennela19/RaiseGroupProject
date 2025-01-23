@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/index.css">
+    <!-- Google Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway+Dots&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/V-removebg-preview.png">
+    <title>RISE Groups of Institutions</title>
+   
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <img src="assets/images/V-removebg-preview.png" alt="RISE Logo">
+            <div class="nav-bar-child">
+                <h1 class="heading">RISE GROUPS OF INSTITUTIONS</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                </ul>
+            </div>
+            <img src="assets/images/V-removebg-preview.png" alt="RISE Logo">
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main-flex">
+            <div class="flex-child-1">
+                <a href="#cse">CSE</a>
+                <a href="#electronics">ECE</a>
+                <a href="#civil">CIVIL</a>
+                <a href="#mech">MECH</a>
+                <a href="#mca">MCA</a>
+                <a href="#mba">MBA</a>
+                <a href="#electrical">EEE</a>
+            </div>
+            <div class="flex-child-2">
+            <div class="hide" id="cse"><img src="assets/images/cse-vector-logo_1004619-14.avif" alt="CSE Logo"></div>
+            <div class="hide" id="electronics"><img src="assets/images/electronics.jpg" alt="ECE Logo"></div>
+            <div class="hide" id="civil"><img src="assets/images/civil.jpg" alt="Civil Logo"></div>
+            <div class="hide" id="mech"><img src="assets/images/mech.jpg" alt="Mechanical Logo"></div>
+            <div class="hide" id="mca"><img src="assets/images/mca.jpg" alt="MCA Logo"></div>
+            <div class="hide" id="mba"><img src="assets/images/mba.jpg" alt="MBA Logo"></div>
+            <div class="hide" id="electrical"><img src="assets/images/eee-letter-logo-design-on-white-background-eee-creative-circle-letter-logo-concept-eee-letter-design-vector.jpg" alt="EEE Logo"></div>
+
+            <div class="hide" id="about">
+                <h1>About RISE</h1>
+                <p>Lorem ipsum, veritatis quas sapiente facilis fugit ut? Unde eius ducimus vel iure amet reprehenderit culpa dolor deleniti expedita sunt? Non distinctio incidunt omnis, eum dolore cupiditate assumenda sapiente ratione suscipit doloremque rerum exercitationem sint saepe.</p>
+            </div>
+
+            <div class="login hide" id="login">
+                <h3>Login</h3>
+                <form id="login-form"> 
+                    
+                    <label class="grid-child-1">User Email: </label>
+                    <input type="email" required class="grid-child-2" id="login-email"> 
+                    <label class="grid-child-3" >Password: </label>
+                    <input type="password" required class="grid-child-4" id="login-password"> 
+                    <button type="submit" >Sign-in</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+
+            <div class="sign-up hide" id="registration">
+                <form  id="registration-form">
+                        <h3>Please Enter Below Credentials to Register</h3>
+                        <table border="2px">
+                            <tr>
+                                <td>Name:</td>
+                                <td><input type="text" required placeholder="Enter Your Name" id="reg-name"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="password" required pateren="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" id="reg-password"></td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password :</td>
+                                <td><input type="password" required id="reg-confirm-password"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="email" required id="reg-email"></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td><input type="text" pateren="^\+?[0-9]{1,3}[-\s]?[0-9]{10}$" id="reg-phone"></td>
+                            </tr>
+                            <tr>
+                                <td>Date Of Birth</td>
+                                <td><input type="date" ></td>
+                            </tr>
+                            <tr>
+                                <td>Gender :</td>
+                                <td><input type="radio" name="gender" id="male" value="male"><label for="male">Male</label> <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label></td>
+                            </tr>
+                            <tr>
+                                <td>Address :</td>
+                                <td> <textarea name="" id=""></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit">Register</button></td>
+                                <td><button type="reset">Reset</button></td>
+                            </tr>
+                        </table>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <p>©Copyright <span style="font-family:Arvo, serif;">RISE GROUP OF INDUSTRIES</span> All Rights Reserved</p>
+        <a href="https://www.linkedin.com/in/viswanadhapalli-vennela-45860b22a/">Chinni_Web_X</a>
+    </footer>
+    <script src="assets/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
